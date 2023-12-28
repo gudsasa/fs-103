@@ -2,12 +2,50 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 a {
     text-decoration: none;
+    color: currentColor;
 }
 
 ul {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-size: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 1166px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+/**------- header ------**/
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 32px;
 }
 
 .header-logo-italic {
@@ -40,7 +78,7 @@ ul {
     color: #111;
     font-size: 14px;
     font-weight: 500;
-     line-height: 1.14;
+    line-height: 1.14;
     letter-spacing: -0.02;
 }
 
@@ -51,71 +89,82 @@ ul {
 .header-menu-link:focus {
     color: #fd9222;
 }
-/**------- header ------**/
+
+/**------- -------- ------**/
 
 .main-section-one {
+    padding-bottom: 80px;
+}
+
+.one-container {
+    background-color: rgba(17, 17, 17, 0.60);
     border-radius: 30px;
-        background: rgba(17, 17, 17, 0.60);
+    padding: 380px 40px 40px 40px;
 }
 
 .section-one-treat {
     color: #FFF;
-        font-size: 28px;
-        font-weight: 500;
-        line-height: 1.21;
-        letter-spacing: -0.03em;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+    max-width: 484px;
 }
 
 .section-one-buy {
     color: #FFF;
-        font-family: inherit;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
+    font-family: inherit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 .section-one-how {
     color: #FFF;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 .section-one-scroll {
     color: #FFF;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.29;
-        /* 128.571% */
-        letter-spacing: -0.03em;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
 }
 
 /** --------------------------- **/
 
 .section-two {
     background: #1E1823;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+
 .section-two-list {}
 
 .section-two-itam {}
 
 .section-two-chapter {
     color: #FFF;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: normal;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 18px;
 }
 
 .section-itam-parag {
     color: rgba(255, 255, 255, 0.70);
-        font-size: 14px;
-        line-height: 1.29;
-        letter-spacing: -0.02em;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
 }
 
 /** --------------------------- **/
@@ -123,60 +172,58 @@ ul {
 /**------- section-three -------**/
 
 .section-three {
-    color: #111;
-        text-align: center;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 1.17;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
+    padding-top: 120px;
 }
 
 .section-three-chapter {
     color: #111;
-        text-align: center;
-        font-size: 14px;
-        line-height: 1.29;
-        letter-spacing: -0.02em;
+    text-align: center;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    max-width: 412px;
+    margin: 0 auto 28px;
 }
 
 .section-three-chapter span {
     color: #FD9222;
 }
 
-.section-three-parag {}
+.section-three-parag {
+    color: #111;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    max-width: 486px;
+    margin: 0 auto 50px;
+}
 
 .section-three-list {}
 
 .section-three-itam {}
 
-.section-three-img-coco {
-    border-radius: 15px;
-        background: #FD9222;
-}
+.section-three-img-coco {}
 
-.section-three-img-muts {
-    border-radius: 15px;
-        background: #1E1823;
-}
+.section-three-img-muts {}
 
 .section-three-img {}
 
 .section-three-tex {
     color: #111;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 1.29;
-        letter-spacing: -0.02em;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
 }
 
 .section-three-tex-itam {
     color: #FFF;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 1.19;
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.19;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
 }
 
 /** --------------------------- **/
@@ -187,12 +234,11 @@ ul {
 
 .section-four-chapter {
     color: #111;
-        text-align: center;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 1.17;
-        letter-spacing: -0.03em
-        text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.17;
+    letter-spacing: -0.03em text-transform: uppercase;
 }
 
 .section-four-chapter span {
@@ -203,9 +249,9 @@ ul {
 
 .four-chapter {
     color: #111;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 1.33;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
 }
 
 .section-four-list {}
@@ -214,10 +260,10 @@ ul {
 
 .section-four-tex {
     color: #111;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1.29;
-        letter-spacing: -0.02em;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
 }
 
 /** --------------------------- **/
@@ -228,12 +274,12 @@ ul {
 
 .section-five-chapter {
     color: #111;
-        text-align: center;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 1.17;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
 }
 
 .section-five-chapter span {
@@ -248,28 +294,28 @@ ul {
 
 .five-chapter {
     color: #111;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 1.33;
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
 }
 
 .section-five-tex {
     color: rgba(17, 17, 17, 0.70);
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 1.17;
-        letter-spacing: -0.02em;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
 }
 
 .section-five-btn {
     color: #111;
-        font-family: inherit;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: normal;
-        cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
 }
 
 /** --------------------------- **/
@@ -280,12 +326,12 @@ ul {
 
 .section-six-chapter {
     color: #FD9222;
-        text-align: center;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 1.17;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
 }
 
 .section-six-chapter span {
@@ -300,11 +346,11 @@ ul {
 
 .six-chapter {
     color: #111;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 1.33;
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
 }
 
 /** --------------------------- **/
@@ -315,12 +361,12 @@ ul {
 
 .section-seven-chapter {
     color: #FD9222;
-        text-align: center;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 1.17;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
 }
 
 .section-seven-chapter span {
@@ -335,27 +381,27 @@ ul {
 
 .seven-chapter {
     color: #111;
-        text-align: center;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 1.33
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33
 }
 
 .section-seven-tex {
     color: rgba(17, 17, 17, 0.70);
-        text-align: center;
-        font-size: 14px;
-        line-height: 1.29;
-        letter-spacing: -0.02em;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
 }
 
 .section-seven-btn {
     color: #111;
-        font-family: inherit;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
+    font-family: inherit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 /** --------------------------- **/
@@ -368,10 +414,10 @@ ul {
 
 .footer-heading {
     color: #FFF;
-        font-size: 28px;
-        font-weight: 500;
-        line-height: calc(34 / 28);
-        letter-spacing: -0.02em;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: calc(34 / 28);
+    letter-spacing: -0.02em;
 }
 
 .footer-heading span {
@@ -380,13 +426,13 @@ ul {
 
 .footer-subtitl {
     color: #FFF;
-        text-align: center;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.29;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.29;
 }
 
-.footer-list- {}
+.footer-list {}
 
 .footer-item {}
 
@@ -394,10 +440,10 @@ ul {
 
 .footer-cont {
     color: #FFF;
-        text-align: center;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.28;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28;
 }
 
 .footer-address {
@@ -410,10 +456,10 @@ ul {
 
 .footer-address-link {
     color: #FFF;
-        text-align: center;
-        font-size: 14px;
-        line-height: 1.29;
-        letter-spacing: -0.02em;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
 }
 
 .footer-nav {}
@@ -424,10 +470,10 @@ ul {
 
 .footer-nav-link {
     color: #FFF;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: -0.02em;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
 }
 
 .footer-but {}
