@@ -33,6 +33,10 @@ address {
     font-size: normal;
 }
 
+img {
+    display: block;
+}
+
 .container {
     width: 100%;
     max-width: 1166px;
@@ -72,7 +76,20 @@ address {
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: -0.03;
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
+
+.header-logo-img {
+    font-style: italic;
+}
+
+.header-menu-list {
+    display: flex;
+}
+
+.header-menu-item {}
 
 .header-menu-link {
     color: #111;
@@ -88,6 +105,11 @@ address {
 
 .header-menu-link:focus {
     color: #fd9222;
+}
+
+.header-soft-list {
+    display: flex;
+
 }
 
 /**------- -------- ------**/
@@ -130,6 +152,20 @@ address {
     line-height: normal;
 }
 
+.section-one-buy {
+    padding: 14xp 40xp;
+    color: #FFF;
+    font-family: inherit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 100px;
+    background: #FD9222;
+    border: none;
+    cursor: pointer;
+}
+
 .section-one-scroll {
     color: #FFF;
     font-family: Montserrat;
@@ -148,9 +184,16 @@ address {
     padding-bottom: 50px;
 }
 
-.section-two-list {}
+.section-two-list {
+    display: flex;
+    padding-left: 18px;
+    padding-right: 18px;
+    gap: 88px;
+}
 
-.section-two-itam {}
+.section-two-itam {
+    width: calc((100% - 88px * 2) / 3);
+}
 
 .section-two-chapter {
     color: #FFF;
@@ -199,9 +242,20 @@ address {
     margin: 0 auto 50px;
 }
 
-.section-three-list {}
+.section-three-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 24px;
+}
 
-.section-three-itam {}
+.section-three-itam {
+    border-radius: 15px;
+    border: 1px solid #FD9222;
+    background: #FFF;
+    width: calc((100% -32 * 3) / 4);
+
+}
 
 .section-three-img-coco {}
 
@@ -232,6 +286,13 @@ address {
 
 .section-four {}
 
+.made-rap {
+    display: flex;
+    gap: 20px;
+}
+
+
+
 .section-four-chapter {
     color: #111;
     text-align: center;
@@ -247,6 +308,12 @@ address {
 
 .section-four-img {}
 
+.made-content {
+    background-color: #FFF;
+    padding: 32px;
+
+}
+
 .four-chapter {
     color: #111;
     font-size: 18px;
@@ -256,7 +323,9 @@ address {
 
 .section-four-list {}
 
-.section-four-item {}
+.section-four-item {
+    
+}
 
 .section-four-tex {
     color: #111;
